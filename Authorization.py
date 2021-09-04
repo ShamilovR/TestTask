@@ -13,11 +13,11 @@ class Authorization:
 
         #Вводим логин
         login = self.driver.find_element_by_id('passp-field-login')
-        login.send_keys('ilshat-pw99@inbox.ru')
+        login.send_keys('login')
         self.driver.find_element_by_id('passp:sign-in').click()
 
         #Вводим пароль
         password = self.driver.find_element_by_id('passp-field-passwd')
-        password.send_keys('zcndke7146')
+        password.send_keys('password')
         self.driver.find_element_by_id('passp:sign-in').click()
 
