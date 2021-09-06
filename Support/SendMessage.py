@@ -26,7 +26,6 @@ class SendMessage:
         letter_content = content_div.find_element_by_xpath(
             "div[@class='cke_wysiwyg_div cke_reset cke_enable_context_menu cke_editable cke_editable_themed cke_contents_ltr cke_htmlplaceholder']/div/br")
 
-        # Пацан к успеху шел, наложение встретил и ушел :(
         # Тут перепробовал все, но постоянно ловил "element is not reachable by keyboard", а все из-за всплывающего окна автозаполнения
         # Поэтому для firefox содержание письма игнорируется
         if self.browser != 'firefox':
